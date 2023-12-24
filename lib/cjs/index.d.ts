@@ -1,1 +1,1 @@
-declare const text: string;
+import './dial';

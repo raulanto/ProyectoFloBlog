@@ -1,3 +1,19 @@
 @tailwind base;
+@layer base {
+    div,body,section,nav,li,footer,hr,span,h1,h2,h3,h4,h5,h6{
+        @apply  dark:transition-colors dark:duration-700 dark:ease-in-out transition-colors duration-700 ease-in-out ;
+    }
+
+    p {
+        @apply mb-2 text-gray-400 text-balance select-none dark:text-gray-400 ;
+
+    }
+    h1,h2,h3,h4,h5,h6{
+        @apply select-none;
+    }
+    hr{
+        @apply dark:border-gray-400 mb-3 border-gray-600
+    }
+}
 @tailwind components;
 @tailwind utilities;
