@@ -24,6 +24,13 @@ setupRatingInteraction("rating6");
 setupRatingInteraction("rating7");
 setupRatingInteraction("rating8");
 setupRatingInteraction("rating9");
+setupRatingInteraction("rating10");
+setupRatingInteraction("rating11");
+setupRatingInteraction("rating12");
+setupRatingInteraction("rating13");
+
+
+
 
 
 
