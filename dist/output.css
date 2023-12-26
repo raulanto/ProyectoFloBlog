@@ -907,13 +907,39 @@ input:checked + .toggle-bg {
   border-color: #1C64F2;
 }
 
-div,body,section,nav,li,footer,hr,span,h1,h2,h3,h4,h5,h6 {
+div,
+    body,
+    section,
+    nav,
+    li,
+    footer,
+    hr,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-:is(:where(.dark) div),:is(:where(.dark) body),:is(:where(.dark) section),:is(:where(.dark) nav),:is(:where(.dark) li),:is(:where(.dark) footer),:is(:where(.dark) hr),:is(:where(.dark) span),:is(:where(.dark) h1),:is(:where(.dark) h2),:is(:where(.dark) h3),:is(:where(.dark) h4),:is(:where(.dark) h5),:is(:where(.dark) h6) {
+:is(:where(.dark) div),:is(:where(.dark) 
+    body),:is(:where(.dark) 
+    section),:is(:where(.dark) 
+    nav),:is(:where(.dark) 
+    li),:is(:where(.dark) 
+    footer),:is(:where(.dark) 
+    hr),:is(:where(.dark) 
+    span),:is(:where(.dark) 
+    h1),:is(:where(.dark) 
+    h2),:is(:where(.dark) 
+    h3),:is(:where(.dark) 
+    h4),:is(:where(.dark) 
+    h5),:is(:where(.dark) 
+    h6) {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -934,7 +960,12 @@ p {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -1087,6 +1118,22 @@ hr {
   }
 }
 
+.imgtrans {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  transition-duration: 300ms;
+}
+
+.group:hover .imgtrans {
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-delay: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1161,10 +1208,6 @@ hr {
 
 .top-0 {
   top: 0px;
-}
-
-.z-0 {
-  z-index: 0;
 }
 
 .z-10 {
@@ -1565,11 +1608,6 @@ hr {
 .rounded-s-lg {
   border-start-start-radius: 0.5rem;
   border-end-start-radius: 0.5rem;
-}
-
-.rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
 }
 
 .border {
@@ -2079,29 +2117,6 @@ hr {
 .focus\:ring-gray-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
-}
-
-.group:hover .group-hover\:scale-x-150 {
-  --tw-scale-x: 1.5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.group:hover .group-hover\:delay-150 {
-  transition-delay: 150ms;
-}
-
-.group:hover .group-hover\:duration-300 {
-  transition-duration: 300ms;
-}
-
-.group:hover .group-hover\:ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .peer:checked ~ .peer-checked\:bg-blue-600 {

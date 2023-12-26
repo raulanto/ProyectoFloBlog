@@ -1,19 +1,50 @@
 @tailwind base;
+
 @layer base {
-    div,body,section,nav,li,footer,hr,span,h1,h2,h3,h4,h5,h6{
-        @apply  dark:transition-colors dark:duration-700 dark:ease-in-out transition-colors duration-700 ease-in-out ;
+
+    div,
+    body,
+    section,
+    nav,
+    li,
+    footer,
+    hr,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply dark:transition-colors dark:duration-700 dark:ease-in-out transition-colors duration-700 ease-in-out;
     }
 
     p {
-        @apply mb-2 text-gray-400 text-balance select-none dark:text-gray-400 ;
+        @apply mb-2 text-gray-400 text-balance select-none dark:text-gray-400;
 
     }
-    h1,h2,h3,h4,h5,h6{
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         @apply select-none;
     }
-    hr{
+
+    hr {
         @apply dark:border-gray-400 mb-3 border-gray-600
     }
 }
+
 @tailwind components;
+
+@layer components {
+    .imgtrans {
+        @apply rounded-t-lg group-hover:transition-all group-hover:scale-150 group-hover:delay-150 group-hover:ease-in-out duration-300;
+
+    }
+}
+
 @tailwind utilities;
