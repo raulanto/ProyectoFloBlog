@@ -12,6 +12,9 @@
   <title>Document</title>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/within.min.css">
+
+
   <link rel="icon" href="src/img/logo.svg">
   <link rel="stylesheet" href="dist/output.css" />
 </head>
@@ -29,7 +32,7 @@
           class="self-center text-2xl font-extrabold leading-none tracking-tight whitespace-nowrap dark:text-white">Crazyrau</span>
       </a>
       <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <label class="relative inline-flex items-center cursor-pointer">
+        <!-- <label class="relative inline-flex items-center cursor-pointer">
           <input type="checkbox" value="" class="sr-only peer" id="dark-toggle" name="dark-mode" />
           <div
             class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
@@ -46,7 +49,26 @@
                 d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z" />
             </svg>
           </span>
+        </label> -->
+        <label class="theme-toggle" title="Toggle theme">
+          <input type="checkbox" id="dark-toggle" name="dark-mode" />
+          <span class="theme-toggle-sr">Toggle theme</span>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="theme-toggle__within dark:fill-white" height="2em"
+            width="2em" viewBox="0 0 32 32" fill="currentColor">
+            <clipPath id="theme-toggle__within__clip">
+              <path d="M0 0h32v32h-32ZM6 16A1 1 0 0026 16 1 1 0 006 16" />
+            </clipPath>
+            <g clip-path="url(#theme-toggle__within__clip)">
+              <path
+                d="M30.7 21.3 27.1 16l3.7-5.3c.4-.5.1-1.3-.6-1.4l-6.3-1.1-1.1-6.3c-.1-.6-.8-.9-1.4-.6L16 5l-5.4-3.7c-.5-.4-1.3-.1-1.4.6l-1 6.3-6.4 1.1c-.6.1-.9.9-.6 1.3L4.9 16l-3.7 5.3c-.4.5-.1 1.3.6 1.4l6.3 1.1 1.1 6.3c.1.6.8.9 1.4.6l5.3-3.7 5.3 3.7c.5.4 1.3.1 1.4-.6l1.1-6.3 6.3-1.1c.8-.1 1.1-.8.7-1.4zM16 25.1c-5.1 0-9.1-4.1-9.1-9.1 0-5.1 4.1-9.1 9.1-9.1s9.1 4.1 9.1 9.1c0 5.1-4 9.1-9.1 9.1z" />
+            </g>
+            <path class="theme-toggle__within__circle"
+              d="M16 7.7c-4.6 0-8.2 3.7-8.2 8.2s3.6 8.4 8.2 8.4 8.2-3.7 8.2-8.2-3.6-8.4-8.2-8.4zm0 14.4c-3.4 0-6.1-2.9-6.1-6.2s2.7-6.1 6.1-6.1c3.4 0 6.1 2.9 6.1 6.2s-2.7 6.1-6.1 6.1z" />
+            <path class="theme-toggle__within__inner"
+              d="M16 9.5c-3.6 0-6.4 2.9-6.4 6.4s2.8 6.5 6.4 6.5 6.4-2.9 6.4-6.4-2.8-6.5-6.4-6.5z" />
+          </svg>
         </label>
+
         <!-- <button data-collapse-toggle="navbar-sticky" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-sticky" aria-expanded="false">
@@ -91,7 +113,7 @@
 
     </h1>
 
-    <img class="rounded-xl bg-center bg-cover w-full" src="src/img/fondo.png" alt="Gradiante">
+    <img class="rounded-xl bg-center bg-cover w-full " src="src/img/fondo.png" alt="Gradiante">
 
   </section>
   <!-- ?Contenido del blog -->
@@ -1172,6 +1194,90 @@
         </article>
       </div>
     </section>
+    <!-- 13 -->
+    <section
+      class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-7 group overflow-hidden">
+      <div class="overflow-hidden max-h-96 w-full">
+        <div class="overflow-hidden">
+
+          <img class="imgtrans" src="src/img/blurry-gradient-haikei(2).png" alt="" />
+        </div>
+        <section
+          class=" bottom-0 left-0 right-0 z-50 flex p-3 mt-3 mx-3 bg-white  border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex items-center gap-4">
+            <img class="w-10 h-10 rounded-full" src="src/img/blurry-gradient-haikei.png" alt="">
+            <div class="font-medium dark:text-white">
+              <div>Raulanto</div>
+              <div class="text-sm text-gray-500 dark:text-gray-400">Miercoles, 20 de diciembre de 2023</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="px-5">
+        <article class="p-5">
+
+          <p>
+            Búscame en tu corazón Estaré ahí durmiendo Acurrucado en tu calor <br>
+            Tomando mi propio color.
+          </p>
+          <p>
+
+            Búscame en tus recuerdos. <br>
+            Estoy soñando despierto Anhelo ver tu sonrisa.
+          </p>
+          <p>
+
+            Quiero tocar tus mejillas
+          </p>
+          <p>
+
+            En cada canción estaré. <br>
+            Mi alma a ti te entregué. <br> No tengo ambición alguna, <br>
+            Junto a ti quiero ver la luna. <br>
+            En cada oración me refugiare Palabras llenas de amor te daré Y si algún día no me encuentras <br>
+            Búscame mientras sueñas.
+          </p>
+
+
+
+          <hr />
+          <section class='rating13 flex flex-row justify-center gap-3 '>
+            <svg class="h-6 transition-all duration-100 fill-gray-400  cursor-pointer " viewBox="0 0 1024 1024"
+              version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="M575.852903 115.426402L661.092435 288.054362c10.130509 20.465674 29.675227 34.689317 52.289797 37.963825l190.433097 27.62866c56.996902 8.288598 79.7138 78.281203 38.475467 118.496253l-137.836314 134.35715c-16.372539 15.963226-23.84251 38.987109-19.954032 61.49935l32.540421 189.716799c9.721195 56.792245-49.833916 100.077146-100.793444 73.267113L545.870691 841.446188a69.491196 69.491196 0 0 0-64.67153 0l-170.376737 89.537324c-50.959528 26.810033-110.51464-16.474868-100.793444-73.267113L242.569401 667.9996c3.888478-22.512241-3.581493-45.536125-19.954032-61.49935L84.779055 472.245428c-41.238333-40.215049-18.521435-110.207655 38.475467-118.496252l190.433097-27.62866c22.61457-3.274508 42.159288-17.498151 52.289797-37.963826L451.319277 115.426402c25.479764-51.675827 99.053862-51.675827 124.533626 0z">
+              </path>
+            </svg>
+            <svg class="h-6 transition-all duration-100 fill-gray-400  cursor-pointer " viewBox="0 0 1024 1024"
+              version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="M575.852903 115.426402L661.092435 288.054362c10.130509 20.465674 29.675227 34.689317 52.289797 37.963825l190.433097 27.62866c56.996902 8.288598 79.7138 78.281203 38.475467 118.496253l-137.836314 134.35715c-16.372539 15.963226-23.84251 38.987109-19.954032 61.49935l32.540421 189.716799c9.721195 56.792245-49.833916 100.077146-100.793444 73.267113L545.870691 841.446188a69.491196 69.491196 0 0 0-64.67153 0l-170.376737 89.537324c-50.959528 26.810033-110.51464-16.474868-100.793444-73.267113L242.569401 667.9996c3.888478-22.512241-3.581493-45.536125-19.954032-61.49935L84.779055 472.245428c-41.238333-40.215049-18.521435-110.207655 38.475467-118.496252l190.433097-27.62866c22.61457-3.274508 42.159288-17.498151 52.289797-37.963826L451.319277 115.426402c25.479764-51.675827 99.053862-51.675827 124.533626 0z">
+              </path>
+            </svg>
+            <svg class="h-6 transition-all duration-100 fill-gray-400  cursor-pointer " viewBox="0 0 1024 1024"
+              version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="M575.852903 115.426402L661.092435 288.054362c10.130509 20.465674 29.675227 34.689317 52.289797 37.963825l190.433097 27.62866c56.996902 8.288598 79.7138 78.281203 38.475467 118.496253l-137.836314 134.35715c-16.372539 15.963226-23.84251 38.987109-19.954032 61.49935l32.540421 189.716799c9.721195 56.792245-49.833916 100.077146-100.793444 73.267113L545.870691 841.446188a69.491196 69.491196 0 0 0-64.67153 0l-170.376737 89.537324c-50.959528 26.810033-110.51464-16.474868-100.793444-73.267113L242.569401 667.9996c3.888478-22.512241-3.581493-45.536125-19.954032-61.49935L84.779055 472.245428c-41.238333-40.215049-18.521435-110.207655 38.475467-118.496252l190.433097-27.62866c22.61457-3.274508 42.159288-17.498151 52.289797-37.963826L451.319277 115.426402c25.479764-51.675827 99.053862-51.675827 124.533626 0z">
+              </path>
+            </svg>
+            <svg class="h-6 transition-all duration-100 fill-gray-400  cursor-pointer " viewBox="0 0 1024 1024"
+              version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="M575.852903 115.426402L661.092435 288.054362c10.130509 20.465674 29.675227 34.689317 52.289797 37.963825l190.433097 27.62866c56.996902 8.288598 79.7138 78.281203 38.475467 118.496253l-137.836314 134.35715c-16.372539 15.963226-23.84251 38.987109-19.954032 61.49935l32.540421 189.716799c9.721195 56.792245-49.833916 100.077146-100.793444 73.267113L545.870691 841.446188a69.491196 69.491196 0 0 0-64.67153 0l-170.376737 89.537324c-50.959528 26.810033-110.51464-16.474868-100.793444-73.267113L242.569401 667.9996c3.888478-22.512241-3.581493-45.536125-19.954032-61.49935L84.779055 472.245428c-41.238333-40.215049-18.521435-110.207655 38.475467-118.496252l190.433097-27.62866c22.61457-3.274508 42.159288-17.498151 52.289797-37.963826L451.319277 115.426402c25.479764-51.675827 99.053862-51.675827 124.533626 0z">
+              </path>
+            </svg>
+            <svg class="h-6 transition-all duration-100 fill-gray-400  cursor-pointer " viewBox="0 0 1024 1024"
+              version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="M575.852903 115.426402L661.092435 288.054362c10.130509 20.465674 29.675227 34.689317 52.289797 37.963825l190.433097 27.62866c56.996902 8.288598 79.7138 78.281203 38.475467 118.496253l-137.836314 134.35715c-16.372539 15.963226-23.84251 38.987109-19.954032 61.49935l32.540421 189.716799c9.721195 56.792245-49.833916 100.077146-100.793444 73.267113L545.870691 841.446188a69.491196 69.491196 0 0 0-64.67153 0l-170.376737 89.537324c-50.959528 26.810033-110.51464-16.474868-100.793444-73.267113L242.569401 667.9996c3.888478-22.512241-3.581493-45.536125-19.954032-61.49935L84.779055 472.245428c-41.238333-40.215049-18.521435-110.207655 38.475467-118.496252l190.433097-27.62866c22.61457-3.274508 42.159288-17.498151 52.289797-37.963826L451.319277 115.426402c25.479764-51.675827 99.053862-51.675827 124.533626 0z">
+              </path>
+            </svg>
+          </section>
+        </article>
+      </div>
+    </section>
+
+
 
 
 

@@ -1,1 +1,3 @@
-declare const text: string;
+import './dial';
+import './darkMode';
+import './setuprating';

@@ -14,13 +14,13 @@ const $targetEl: HTMLElement = document.getElementById('dialContent');
 const options: DialOptions = {
   triggerType: 'hover',
   onHide: () => {
-      console.log('speed dial is shown');
+      // console.log('speed dial is shown');
   },
   onShow: () => {
-      console.log('speed dial is hidden');
+      // console.log('speed dial is hidden');
   },
   onToggle: () => {
-    console.log('speed dial is toggled')
+    // console.log('speed dial is toggled')
   }
 };
 
